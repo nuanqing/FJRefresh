@@ -5,7 +5,7 @@
 >利用runtime特性实现的一款简单的上拉刷新与下拉加载的控件，同时加入没有数据时可以点击的无数据提示的空白页，可自定义展示
 >
 
-![效果图](https://github.com/nuanqing/FJRefresh/blob/master/FJRefreshDemo/FJRefresh.gif)
+![效果图](https://github.com/nuanqing/FJRefresh/blob/master/FJRefresh.gif)
 
 基本使用，在控制器中添加以下代码:
 ```
