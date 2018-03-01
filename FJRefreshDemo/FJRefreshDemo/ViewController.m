@@ -40,7 +40,7 @@
 
 - (void)addData{
     for (int i=0; i<3; i++) {
-        [_dataArray addObject:@"下拉刷新，上拉加载"];
+        [_dataArray addObject:@"下拉刷新，上拉加载,点击加载NoDataView"];
     }
     //添加刷新与加载
     [self addRefresh];
@@ -54,7 +54,7 @@
 
             [self.dataArray removeAllObjects];
             for (int i=0; i<3; i++) {
-                [self.dataArray addObject:@"下拉刷新，上拉加载"];
+                [self.dataArray addObject:@"下拉刷新，上拉加载,点击加载NoDataView"];
             }
             [self.tableView reloadData];
             [self.tableView endHeaderRefresh];
@@ -67,7 +67,7 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
             for (int i=0; i<6; i++) {
-                [self.dataArray addObject:@"下拉刷新，上拉加载"];
+                [self.dataArray addObject:@"下拉刷新，上拉加载,点击加载NoDataView"];
             }
             [self.tableView reloadData];
             [self.tableView endFooterRefresh];
@@ -105,7 +105,7 @@
     if (!_dataArray) {
         _dataArray = [[NSMutableArray alloc]init];
         for (int i=0; i<3; i++) {
-            [_dataArray addObject:@"下拉刷新，上拉加载"];
+            [_dataArray addObject:@"下拉刷新，上拉加载,点击加载NoDataView"];
         }
     }
     return _dataArray;

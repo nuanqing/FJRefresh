@@ -24,6 +24,7 @@
 //下拉刷新
 - (void)headerRefreshWithBlock:(headerRefresh)block{
     self.headerBlock = block;
+    self.headerView = nil;
     if (self.headerView == nil) {
         self.headerView = [[FJRefreshHeaderView alloc]initWithFrame:CGRectMake(0, -50, FJMainScreenWidth, 50)];
     }
@@ -41,6 +42,7 @@
 //上拉加载
 - (void)footerRefreshWithBlock:(footerRefresh)block{
     self.footerBlock = block;
+    self.footerView = nil;
     if (self.footerView == nil) {
         self.footerView = [[FJRefreshFooterView alloc]initWithFrame:CGRectMake(0, self.contentSize.height, FJMainScreenWidth, 50)];
     }
